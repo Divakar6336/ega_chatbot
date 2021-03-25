@@ -1,0 +1,71 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "order_number"
+      ]
+    },
+    "utter_shipment_details": {
+      "slots": []
+    },
+    "utter_get_order_number": {
+      "slots": [
+        "order_number"
+      ]
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "utter_cancelled_standing_instructions": {
+      "slots": []
+    },
+    "action_order_value": {
+      "slots": []
+    },
+    "utter_lme_trends": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_order_details": {
+      "slots": []
+    },
+    "utter_active_standing_instructions": {
+      "slots": []
+    },
+    "utter_my_order_details": {
+      "slots": []
+    },
+    "utter_my_shipment_details": {
+      "slots": []
+    },
+    "utter_expired_standing_instructions": {
+      "slots": []
+    },
+    "utter_lme_price": {
+      "slots": []
+    },
+    "utter_price_setting": {
+      "slots": []
+    }
+  },
+  "python": "3.6.1",
+  "max_histories": [
+    5,
+    null,
+    5,
+    2
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.form_policy.FormPolicy"
+  ],
+  "trained_at": "20191120-151822",
+  "rasa_core": "0.13.2",
+  "tensorflow": "1.12.0",
+  "sklearn": "0.20.4"
+}

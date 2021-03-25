@@ -1,0 +1,45 @@
+cd ega
+cd ega_chatbot
+cd..
+virtualenv -p C:\Program Files\Python36\python.exe rasa_env
+virtualenv -p "C:\Program Files\Python36\python.exe" rasa_env
+cd ega_chat
+cd ega_chatbot
+C:\Users\avinash.navlani\rasa_env\Scripts\avtivate
+C:\Users\avinash.navlani\rasa_env\Scripts\activate
+pip intall -r requirements.txt
+pip install -r requirements.txt
+pip list
+pip install spacy
+python -m spacy download en
+pip install spacy
+python -m spacy download en
+python app.py
+pip show rasa_core
+pip isntall rasa_core==0.13.2
+pip install rasa_core==0.13.2
+python -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose
+pip install tensorflow
+pip install sklearn_crfsuite
+python -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose
+pip install tensorflow
+python -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose
+pip install tensorflow --user
+pip install tensorflow 
+pip install keras-applications==1.0.6
+pip install keras-preprocessing==1.0.5
+python -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose
+pip isntall rasa_core==0.13.2
+pip install rasa_core==0.13.2
+python -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose
+python app.py
+pip install tensorflow.python.platform
+python app.py
+pip install --upgrade --force-reinstall tensorflow==1.12.0
+python -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose
+python -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue
+python app.py
+history 
+doskey /history 
+doskey /history >history.txt
+doskey /history > history.txt

@@ -1,0 +1,738 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "hii"
+      },
+      {
+        "intent": "greet",
+        "text": "hiii"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "order_status",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the status of my order 12345 ?"
+      },
+      {
+        "intent": "order_status",
+        "entities": [
+          {
+            "start": 38,
+            "end": 43,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the status of my order number 12345 ?"
+      },
+      {
+        "intent": "order_status",
+        "entities": [
+          {
+            "start": 34,
+            "end": 39,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the status of my order id 12345 ?"
+      },
+      {
+        "intent": "order_status",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "status of order number 12345"
+      },
+      {
+        "intent": "order_status",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "status of order id 12345"
+      },
+      {
+        "intent": "order_status",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "status of order 12345"
+      },
+      {
+        "intent": "order_status",
+        "text": "order status"
+      },
+      {
+        "intent": "order_status",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "order status 12345"
+      },
+      {
+        "intent": "order_status",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "order status of 12345"
+      },
+      {
+        "intent": "order_status",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "order status of order id 12345"
+      },
+      {
+        "intent": "order_status",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "order status of order number 12345"
+      },
+      {
+        "intent": "order_status",
+        "text": "order status"
+      },
+      {
+        "intent": "order_status",
+        "text": "order status of order number 23658"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the ETA of my order 12345  ?"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 35,
+            "end": 40,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the ETA of my order number 12345  ?"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the ETA of my order id 12345  ?"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "ETA of my order number 12345"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "ETA of my order id 12345"
+      },
+      {
+        "intent": "order_status_eta",
+        "text": "Expected time of arrival"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 42,
+            "end": 47,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "Expected time of arrival for order number 12345"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "eta of order id 12345"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "eta of order number 12345"
+      },
+      {
+        "intent": "order_status_eta",
+        "text": "order eta"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 26,
+            "end": 31,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "order eta of order number 12345"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 22,
+            "end": 27,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "order eta of order id 12345"
+      },
+      {
+        "intent": "order_status_eta",
+        "text": "eta"
+      },
+      {
+        "intent": "order_status_eta",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "eta of 12345"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the ETS of my order 12345  ?"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 35,
+            "end": 40,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the ETS of my order number 12345  ?"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the ETS of my order id 12345  ?"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "ETS of my order number 12345"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "ETS of my order id 12345"
+      },
+      {
+        "intent": "order_status_ets",
+        "text": "Expected time of shipment"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 43,
+            "end": 48,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "Expected time of shipment for order number 12345"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 39,
+            "end": 44,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "Expected time of shipment for order id 12345"
+      },
+      {
+        "intent": "order_status_ets",
+        "text": "order ets"
+      },
+      {
+        "intent": "order_status_ets",
+        "text": "ets"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "ets of 12345"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "ets of order 12345"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "ets of order number 12345"
+      },
+      {
+        "intent": "order_status_ets",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "ets of ordee id 12345"
+      },
+      {
+        "intent": "order_value",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the value of order 12345  ?"
+      },
+      {
+        "intent": "order_value",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the value of order id 12345  ?"
+      },
+      {
+        "intent": "order_value",
+        "entities": [
+          {
+            "start": 34,
+            "end": 39,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "What is the value of order number 12345  ?"
+      },
+      {
+        "intent": "order_value",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "value of order id 12345"
+      },
+      {
+        "intent": "order_value",
+        "entities": [
+          {
+            "start": 22,
+            "end": 27,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "value of order number 12345"
+      },
+      {
+        "intent": "order_value",
+        "text": "order value"
+      },
+      {
+        "intent": "order_value",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "order value of 12345"
+      },
+      {
+        "intent": "order_value",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "order value of order id 12345"
+      },
+      {
+        "intent": "order_value",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "12345",
+            "entity": "order_number"
+          }
+        ],
+        "text": "order value of order number 12345"
+      },
+      {
+        "intent": "order_value",
+        "text": "value of order"
+      },
+      {
+        "intent": "provide_order_number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "23456",
+            "entity": "order_number"
+          }
+        ],
+        "text": "23456"
+      },
+      {
+        "intent": "provide_order_number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "1234",
+            "entity": "order_number"
+          }
+        ],
+        "text": "1234"
+      },
+      {
+        "intent": "provide_order_number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "123456",
+            "entity": "order_number"
+          }
+        ],
+        "text": "123456"
+      },
+      {
+        "intent": "my_shipment_details",
+        "text": "How many shipments do I have in transit ?"
+      },
+      {
+        "intent": "my_shipment_details",
+        "text": "number of shipments I have in transit"
+      },
+      {
+        "intent": "shipment_details",
+        "text": "Show me the details of the Shipments in Transit"
+      },
+      {
+        "intent": "shipment_details",
+        "text": "Display the details of the Shipments in Transit"
+      },
+      {
+        "intent": "shipment_details",
+        "text": "show me the details of Shipments which are arriving"
+      },
+      {
+        "intent": "shipment_details",
+        "text": "Arrival of Shipment"
+      },
+      {
+        "intent": "shipment_details",
+        "text": "Shipments in Transit"
+      },
+      {
+        "intent": "lme_price",
+        "text": "What is the current LME price?"
+      },
+      {
+        "intent": "lme_price",
+        "text": "What is the present LME price?"
+      },
+      {
+        "intent": "lme_price",
+        "text": "current lme price"
+      },
+      {
+        "intent": "lme_trends",
+        "text": "show me historical LME Prices"
+      },
+      {
+        "intent": "lme_trends",
+        "text": "display me historical LME Prices"
+      },
+      {
+        "intent": "active_standing_instructions",
+        "text": "What are my active standing instructions ?"
+      },
+      {
+        "intent": "active_standing_instructions",
+        "text": "my active standing instructions"
+      },
+      {
+        "intent": "expired_standing_instructions",
+        "text": "Show my expired standing instructions ?"
+      },
+      {
+        "intent": "expired_standing_instructions",
+        "text": "expired standing instructions"
+      },
+      {
+        "intent": "cancelled_standing_instructions",
+        "text": "Show my cancelled standing instructions ?"
+      },
+      {
+        "intent": "cancelled_standing_instructions",
+        "text": "cancelled standing instructions"
+      },
+      {
+        "intent": "my_order_details",
+        "text": "How many orders have I declared this month ?"
+      },
+      {
+        "intent": "my_order_details",
+        "text": "My declared number of orders this month"
+      },
+      {
+        "intent": "my_order_details",
+        "text": "show my order details"
+      },
+      {
+        "intent": "my_order_details",
+        "text": "my order details"
+      },
+      {
+        "intent": "order_details",
+        "text": "List the Order Details Declared this Month"
+      },
+      {
+        "intent": "order_details",
+        "text": "show order details of this Month"
+      },
+      {
+        "intent": "price_setting",
+        "text": "Show the price settings I have performed last week ?"
+      },
+      {
+        "intent": "price_setting",
+        "text": "My last week price settings"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "by"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you around"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Talk to you later"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "order_number",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

@@ -1,0 +1,90 @@
+%YAML 1.1
+---
+
+actions:
+- utter_confirm_order_number
+- action_order_ets_details
+- utter_expired_standing_instructions
+- utter_active_standing_instructions
+- continue
+- utter_order_status
+- utter_my_order_details
+- utter_order_status_ets
+- utter_greet
+- utter_order_value
+- utter_goodbye
+- action_order_details
+- action_order_value
+- action_order_eta_details
+- utter_get_order_number
+- utter_shipment_details
+- utter_lme_price
+- utter_order_status_eta
+- utter_order_details
+- utter_cancelled_standing_instructions
+- utter_lme_trends
+- utter_my_shipment_details
+- utter_price_setting
+entities:
+- order_number
+intents:
+- order_status
+- greet
+- order_status_eta
+- order_status_ets
+- order_value
+- my_shipment_details
+- shipment_details
+- lme_price
+- lme_trends
+- active_standing_instructions
+- expired_standing_instructions
+- cancelled_standing_instructions
+- my_order_details
+- order_details
+- price_setting
+- goodbye
+slots:
+  order_number:
+    type: unfeaturized
+templates:
+  utter_active_standing_instructions:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_active_standing_instructions
+  utter_cancelled_standing_instructions:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_cancelled_standing_instructions
+  utter_confirm_order_number:
+  - text: your Order number is {order_number}
+  utter_expired_standing_instructions:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_expired_standing_instructions
+  utter_get_order_number:
+  - text: What is the order number?
+  - text: Please share your order number?
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hello User! How can I help you today ?
+  utter_lme_price:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_current_LME_price
+  utter_lme_trends:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_current_LME_price_trend
+  utter_my_order_details:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_order_declared
+  utter_my_shipment_details:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_order_declared
+  utter_order_details:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_ExtendedSearchOrder
+  utter_order_status:
+  - text: 'Call API: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_status_order_number'
+  utter_order_status_eta:
+  - text: 'API: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_ETA'
+  utter_order_status_ets:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_ETS
+  utter_order_value:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Get_order_value
+  utter_price_setting:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_GraphData
+  utter_shipment_details:
+  - text: http://dubal5136v/PortalWS/PortalCPWS.asmx?op=Bot_Shipments_in_Transit
+
+forms:
+  - order_form
